@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisa de Satisfação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: white;
+      width: 60%;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    fieldset {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select {
+      margin-top: 5px;
+      padding: 8px;
+      width: 95%;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+
+    .radio-group, .checkbox-group {
+      margin-top: 10px;
+    }
+
+    .radio-group label, .checkbox-group label {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pesquisa de Satisfação</h1>
+  
+  <form action="#" method="post">
+    <!-- Parte A: Dados Pessoais -->
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+    </fieldset>
+
+    <!-- Parte B: Pesquisa -->
+    <fieldset>
+      <legend>Pesquisa</legend>
+
+      <label>1. Como você avalia nosso atendimento?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="atendimento" value="excelente" required> Excelente</label>
+        <label><input type="radio" name="atendimento" value="bom"> Bom</label>
+        <label><input type="radio" name="atendimento" value="regular"> Regular</label>
+        <label><input type="radio" name="atendimento" value="ruim"> Ruim</label>
+      </div>
+
+      <label>2. Você recomendaria nossa empresa a um amigo?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="recomendacao" value="sim" required> Sim</label>
+        <label><input type="radio" name="recomendacao" value="talvez"> Talvez</label>
+        <label><input type="radio" name="recomendacao" value="nao"> Não</label>
+      </div>
+
+      <label for="produto">3. Qual produto/serviço você mais utiliza?</label>
+      <select id="produto" name="produto" required>
+        <option value="">Selecione...</option>
+        <option value="produto1">Produto 1</option>
+        <option value="produto2">Produto 2</option>
+        <option value="servico1">Serviço 1</option>
+        <option value="servico2">Serviço 2</option>
+      </select>
+    </fieldset>
+
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" name="compartilhar" value="sim">
+        Autorizo compartilhar minha resposta com terceiros.
+      </label>
+    </div>
+
+    <br>
+    <button type="submit">Enviar Resposta</button>
+  </form>
+</body>
+</html>
