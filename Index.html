@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria de Filmes Favoritos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #eee;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .galeria a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.8);
+    }
+
+    .titulo {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎬 Meus Filmes Favoritos</h1>
+  <div class="galeria">
+    <div>
+      <a href="https://pt.wikipedia.org/wiki/How_to_Train_Your_Dragon_2" target="_blank">
+        <img src="httyd2.jpg" alt="Como Treinar o Seu Dragão 2">
+        <div class="titulo">Como Treinar o Seu Dragão 2</div>
+      </a>
+    </div>
+    <div>
+      <a href="https://pt.wikipedia.org/wiki/1984_(filme)" target="_blank">
+        <img src="1984.jpg" alt="1984">
+        <div class="titulo">1984</div>
+      </a>
+    </div>
+    <div>
+      <a href="https://pt.wikipedia.org/wiki/One_Piece_Film:_Red" target="_blank">
+        <img src="onepiece_red.jpg" alt="One Piece: Red">
+        <div class="titulo">One Piece: Red</div>
+      </a>
+    </div>
+    <div>
+      <a href="https://pt.wikipedia.org/wiki/Jujutsu_Kaisen_0" target="_blank">
+        <img src="jjk0.jpg" alt="Jujutsu Kaisen 0">
+        <div class="titulo">Jujutsu Kaisen 0</div>
+      </a>
+    </div>
+    <div>
+      <a href="https://pt.wikipedia.org/wiki/Sonic_the_Hedgehog_3_(filme)" target="_blank">
+        <img src="sonic3.jpg" alt="Sonic 3">
+        <div class="titulo">Sonic 3</div>
+      </a>
+    </div>
+    <div>
+      <a href="https://pt.wikipedia.org/wiki/The_Shining_(filme)" target="_blank">
+        <img src="shining.jpg" alt="O Iluminado">
+        <div class="titulo">O Iluminado</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
